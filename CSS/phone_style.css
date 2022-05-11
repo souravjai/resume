@@ -139,7 +139,7 @@ footer {
     flex-direction: column-reverse;
     height: 170px;
     align-items: flex-end;
-    margin-top: 11px;
+    margin-top: 25px;
 }
 
 .footerRight {
@@ -152,6 +152,10 @@ footer {
     flex-direction: row;
     width: 90%;
     justify-content: space-between;
+}
+
+.footerLeft {
+    width: auto;
 }
 
 .Rfooter>div:nth-child(1) {
