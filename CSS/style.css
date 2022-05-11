@@ -1,0 +1,691 @@
+#phone {
+    display: none;
+    height: 0;
+}
+
+.container {
+    /* display: none; */
+    transition: all 0.25s linear;
+}
+
+.hidden {
+    display: none;
+}
+
+.visuallyHidden {
+    opacity: 0;
+}
+
+:root {
+    --blue: rgb(0, 80, 255);
+    --white: white;
+    --content: 'Raleway', sans-serif;
+    --heading: 'Poppins', sans-serif;
+    --bgColor: rgb(230 218 206);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    /* display: block; */
+    height: 125px;
+    width: 100%;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 1px 20px 0px black;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+header>.HeaderleftBar {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+}
+
+header>.HeaderleftBar>span {
+    margin: auto 5px;
+}
+
+.divide {
+    font-size: 30px;
+}
+
+.bluebox {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: var(--blue);
+    margin: 0px 10px;
+}
+
+.name {
+    font-size: 25px;
+    font-family: var(--heading);
+    font-weight: 900;
+}
+
+.designation {
+    font-family: var(--content);
+    font-size: 20px;
+}
+
+header>.HeaderNavbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navList {
+    list-style: none;
+    margin: 30px;
+}
+
+.navList a {
+    font-family: var(--content);
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.selected {
+    color: var(--blue) !important;
+}
+
+.navList a:hover {
+    color: var(--blue);
+}
+
+.navItem {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+#About {
+    background-color: white;
+}
+
+aside.colorOverlay {
+    background: var(--bgColor);
+    height: 600px;
+    width: 40%;
+}
+
+.card {
+    position: absolute;
+    height: 500px;
+    width: 60%;
+    background-color: var(--white);
+    top: 25%;
+    left: 20%;
+    display: flex;
+}
+
+.leftCard {
+    background-color: rgb(244, 236, 230);
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: -5px 2px 6px 0px rgba(128, 128, 128, 0.616);
+}
+
+.leftCard>.pic {
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    /* background: red; */
+}
+
+.leftCard>.name {
+    margin: 20px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blueLine {
+    height: 3px;
+    width: 15%;
+    background-color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.leftCard>.designation {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.followFooter {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.followFooter img {
+    width: 31px;
+}
+
+.rightpara {
+    /* background-color: red; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pic>img {
+    height: inherit;
+    border-radius: 50%;
+}
+
+.rightpara>h1 {
+    font-family: var(--heading);
+    font-size: 60px;
+    padding: 5px;
+    margin: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.rightpara>h3 {
+    font-size: 30px;
+    font-family: 'Poppins';
+    padding: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.rightpara>p,
+.rightpara code {
+    font-family: var(--content);
+    font-size: 18px;
+    /* font-weight: 900; */
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+.rightpara code {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.rightpara>.tabs {
+    margin: 10px;
+    padding: 5px;
+}
+
+.btn {
+    width: 140px;
+    background-color: transparent;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.selected_button {
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.selected_button:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLeft {
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerLeft>div {
+    margin: 20px;
+    font-family: var(--content);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.footerRight {
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.followFooter img:hover {
+    transform: scale(1.1);
+}
+
+.Rfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rfooter>div:nth-child(1) {
+    font-family: var(--heading);
+    font-size: 15px;
+    margin: 3px;
+}
+
+#icons {
+    width: 125%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Rfooter>div>a>img {
+    width: 21px;
+}
+
+.Rfooter>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    background: var(--bgColor);
+    padding-top: 125px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+.resumeHeading,
+.ProjectHeading {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeHeading>span {
+    font-size: 30px;
+}
+
+.background-details {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Resume-card {
+    width: 98%;
+    margin: 25px auto;
+    height: 350px;
+    /* border: 1px solid red; */
+    background: white;
+    /* box-shadow: 0px 0px 3px 0px #595959; */
+    /* box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, .6); */
+    display: grid;
+    grid-template-columns: 0.65fr 1fr;
+}
+
+.left-ResumeCard {
+    margin: 15px;
+    padding-left: 20px;
+    margin-top: 70px;
+}
+
+.duration {
+    margin: 5px;
+    font-size: 27px;
+    color: var(--blue);
+    font-family: var(--heading);
+}
+
+.left-ResumeCard>h3 {
+    font-family: var(--content);
+    font-size: 20px;
+    margin: 15px 5px;
+}
+
+.left-ResumeCard>h4 {
+    font-family: var(--content);
+    font-size: 16px;
+    margin: 7px 5px;
+}
+
+.right-ResumeCard {
+    Font-family: var(--content);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-ResumeCard>h3 {
+    margin: 20px 5px;
+}
+
+.right-ResumeCard>ul {
+    margin-left: 20px;
+    font-family: var(--heading);
+    font-size: 15px;
+}
+
+.right-ResumeCard>ul>li {
+    margin: 5px 0px;
+}
+
+.right-ResumeCard>p {
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    padding: 30px;
+    padding-right: 17px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.skills {
+    display: block;
+    height: auto;
+    padding: 40px 25px;
+}
+
+ul.skill-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    font-family: var(--content);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul.skill-list>li:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: 1px solid var(--blue);
+    display: inline-block;
+    margin-right: 14px;
+    border-radius: 10px;
+    background: var(--blue);
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 10px;
+}
+
+.scroll>span,
+.scroll>a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.scroll>span {
+    font-family: var(--heading);
+    /* font-weight: 900; */
+}
+
+.scroll>a {
+    color: var(--blue);
+    font-family: var(--content);
+    letter-spacing: 1.5px;
+}
+
+.scroll>a:hover {
+    text-decoration: underline;
+}
+
+.projectList {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.innerCard:hover {
+    transform: scale(1.02);
+    box-shadow: -4px 3px 20px 4px #7d7a7a;
+}
+
+.projectName {
+    height: 67px;
+    background: rgb(244, 236, 230);
+    margin-top: 20px;
+    padding-left: 15px;
+    font-size: 35px;
+    font-family: var(--heading);
+    padding-top: 5px;
+}
+
+.projectType {
+    margin: 10px;
+    padding: 5px;
+    font-size: 19px;
+    font-family: 'Ubuntu';
+}
+
+.labels {
+    margin-top: 15px;
+    margin-left: 13px;
+    /* display: flex; */
+}
+
+.labels>span {
+    display: inline-block;
+    padding: 10px 6px;
+    width: 80px;
+    height: 35px;
+    /* margin: 0px 5px; */
+    /* display: flex; */
+    text-align: center;
+    border-radius: 5px;
+    font-family: var(--content);
+    font-size: 15px;
+}
+
+.labels>span:nth-child(1) {
+    background: rgb(186, 213, 245);
+}
+
+.labels>span:nth-child(2) {
+    background: rgb(242, 201, 134);
+}
+
+.labels>span:nth-child(3) {
+    background: rgb(234, 221, 134);
+}
+
+.expand {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7px;
+    font-family: var(--content);
+    font-size: 20px;
+}
+
+.expand img {
+    height: 30px;
+}
+
+.expand img,
+.expand span {
+    cursor: pointer;
+}
+
+.links {
+    margin: 10px 8px;
+    color: #039be5;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: var(--heading);
+}
+
+.links>span:nth-child(1)>a {
+    color: #039be5;
+}
+
+.links>span:nth-child(2)>a {
+    color: #739150;
+}
+
+.links span {
+    padding: 10px;
+    /* text-decoration: none; */
+}
+
+.project-Card {
+    perspective: 1000px;
+}
+
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transition: transform 0.6s; */
+    transform-style: preserve-3d;
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: -4px 3px 20px 3px #b7b3b3;
+    transition: all 0.5s;
+}
+
+.frontFace,
+.backFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.backFace {
+    transform: rotateY(180deg);
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.backFace h3 {
+    font-family: var(--content);
+    margin: 13px 0px;
+    font-size: 30px;
+    padding: 0px 13px;
+    color: var(--blue);
+    margin-bottom: 7px;
+}
+
+.backFace p {
+    margin: 5px 0px;
+    padding: 0 13px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #039be5;
+}
+
+.backFace li {
+    margin-left: 30px;
+    padding: 4px 5px;
+    font-family: var(--heading);
+}
+
+.project-Card:nth-child(6) .projectName {
+    font-size: 30px;
+}
+
+.coding-card {
+    width: 35%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, .6); */
+}
+
+.codeProfile {
+    display: flex;
+    padding: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.codeProfile span {
+    margin-left: 10px;
+}
+
+.code-icon img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.codeProfile a {
+    color: var(--blue);
+    text-decoration: none;
+    font-family: var(--content);
+    cursor: pointer;
+}
+
+.codeProfile a:hover {
+    color: lightblue;
+}

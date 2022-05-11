@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Jaiswal</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="./CSS/phone_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Raleway:wght@300;400&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="HeaderleftBar">
+            <span class="bluebox"></span>
+            <span class="name">Sourav Jaiswal</span>
+            <span class="divide">/</span>
+            <span class="designation">SOFTWARE DEVELOPER</span>
+        </div>
+        <div id="phone" onclick="expand()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="HeaderNavbar">
+            <ul class="navList">
+                <li class="navItem"><a onclick="disp('About',1)" class="selected">About Me</a></li>
+                <li class="navItem"><a onclick="disp('Resume',2)">Resume</a></li>
+                <li class="navItem"><a onclick="disp('Project',3)">Projects</a></li>
+                <li class="navItem"><a onclick="disp('Social',4)">Coding-Social</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container" id="About">
+        <aside class="colorOverlay"> </aside>
+        <div class="card">
+            <div class="leftCard">
+                <div class="pic">
+                    <img src="./image/dp.png" alt="dp">
+                </div>
+                <div class="name">Sourav Jaiswal</div>
+                <div class="blueLine"></div>
+                <div class="designation">SOFTWARE DEVELOPER</div>
+                <div class="followFooter">
+                    <a href="https://github.com/souravjai" target="_blank"><img src="./image/Github.png" alt="github" srcset=""></a>
+                    <a href="mailto:souravjaiswal2000@gmail.com" target="_blank"><img src="./image/gmail.png" alt="gmail" srcset=""></a>
+                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank"><img src="./image/linkedin.png" alt="linkedin" srcset=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank"><img src="./image/facebook.png" alt="facebook" srcset=""></a>
+                    <a href="https://wa.me/+918017474045" target="_blank"><img src="./image/whatsapp.png" alt="whatsapp" srcset=""></a>
+                </div>
+            </div>
+            <div class="rightpara">
+                <h1>Hello World!</h1>
+                <h3>Here's Who I am & What I do</h3>
+                <div class="tabs">
+                    <a onclick="disp('Resume',2)"><button class="btn">Resume</button></a>
+                    <a onclick="disp('Project',3)"><button class="btn">Projects</button></a>
+                    <a href=""><button class="btn selected_button">Download CV</button></a>
+                </div>
+                <p>I am a Software Developer who loves to play around with code and develop new stuff.
+                    <br><br> Sound knowledge in Data-Structure & Algorithm, Core-Java, Fullstack-Development, Object-Oriented Programming concepts and lot more!.</p>
+                <code>while( !(succeed = tryAgain() ));</code>
+            </div>
+        </div>
+    </section>
+
+    <section class="container hidden visuallyHidden" id="Resume">
+        <div class="resumeHeading">
+            <span class="bluebox"></span>
+            <span class="name">Resume</span>
+        </div>
+
+        <div class="scroll">
+            <span>Move to: </span>
+            <a href="#Experience">Experience</a>
+            <a href="#Education">Education Background</a>
+        </div>
+
+
+        <div class="background-details">
+
+            <div class="work-header">
+                <span class="name">Technical Skillset</span>
+            </div>
+
+            <div class="Resume-card skills" id="skillset">
+                <ul class="skill-list">
+                    <li>Fullstack Development: HTML+CSS / Javascript / NodeJS</li>
+                    <li>Object Oriented Programming knowledge: Java , C++</li>
+                    <li>Data Structures & Algorithm</li>
+                    <li>Database: SQL, PLSQL</li>
+                    <li>Operating System: bash, shell scripting</li>
+                    <li>Internet Of Things</li>
+                    <li>Azure Fundamentals</li>
+                </ul>
+            </div>
+            <div class="work-header" id="Experience">
+                <span class="name">Experience</span>
+                <a href=""><button class="btn selected_button">Download CV</button></a>
+            </div>
+            <div class="Resume-card">
+                <div class="left-ResumeCard">
+                    <div class="duration">2021-Present</div>
+                    <h3>System Engineer</h3>
+                    <h4>Tata Consultancy Services</h4>
+                    <h4>Kolkata</h4>
+                </div>
+                <div class="right-ResumeCard">
+                    <h3>
+                        Quality Assurance Engineer
+                    </h3>
+                    <ul>
+                        <li>Worked as a Quality Assurance Engineer in upto three different teams simultaneously. </li>
+                        <li>Worked in agile model. Proficient in SDLC, STLC and waterfall model.</li>
+                        <li>Worked in Selenium Automation.</li>
+                        <li>Fair exposure to API Testing with Postman.</li>
+                        <li>Implemented Process Improvent plan in team</li>
+                        <li> Knowledge transfer to new QA engineers joining the project.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="work-header" id="Education">
+                <span class="name">Education</span>
+            </div>
+            <div class="Resume-card">
+                <div class="left-ResumeCard">
+                    <div class="duration">2017-2021</div>
+                    <h3>RCC Institute of information technology</h3>
+                    <h4>B.Tech – Information Technology</h4>
+                    <h4>Kolkata</h4>
+                </div>
+                <div class="right-ResumeCard">
+                    <ul>
+                        <li>DGPA: 9.17</li>
+                        <li>Member of coding club.</li>
+                        <li>Hosted various coding contest at Technical fest.</li>
+                        <li>Consistent YGPA in each year.(8+)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Resume-card">
+                <div class="left-ResumeCard">
+                    <div class="duration">2016-2017</div>
+                    <h3>Purwanchal Vidyamandir</h3>
+                    <h4>ISC Class XII</h4>
+                    <h4>Kolkata</h4>
+                </div>
+                <div class="right-ResumeCard">
+                    <ul>
+                        <li>Percentage Scored: 93%</li>
+                        <li>Scored 98 in Computer Science.</li>
+                        <li>Scored 98 in Mathematics.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Resume-card">
+                <div class="left-ResumeCard">
+                    <div class="duration">2014-2015</div>
+                    <h3>Purwanchal Vidyamandir</h3>
+                    <h4>ICSE Class X</h4>
+                    <h4>Kolkata</h4>
+                </div>
+                <div class="right-ResumeCard">
+                    <ul>
+                        <li>Percentage Scored: 82.4%</li>
+                        <li>Scored 100 in Computer Science.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container hidden visuallyHidden" id="Project">
+        <div class="ProjectHeading">
+            <span class="bluebox"></span>
+            <span class="name">Projects</span>
+        </div>
+        <div class="projectList">
+            <div class="project-Card" id="1" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Indian Bingo</div>
+                        <div class="projectType">
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="expand">
+                            <span>Multiplayer Indian Bingo</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="http://jai-bingo.herokuapp.com/" target="_blank">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/bingo" target="_blank">Github</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Multiplayer Bingo Game</h3>
+                        <p>An app where multiple people can join play the bingo game.</p>
+                        <ul>
+                            <li>Uses Socket.io , Express Library.</li>
+                            <li>Responsive design.</li>
+                            <li>Implmented Multi-room support.</li>
+                            <li>Implemented Room admin feature.</li>
+                            <li>Systematic API calls</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-Card" id="2" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Real-Time Chat App</div>
+                        <div class="projectType">
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="expand">
+                            <span>Multi-room Chat App</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="https://sourav-chat.herokuapp.com/" target="_blank">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/realtimeChatApp" target="_blank">Github</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Multiroom Chat App</h3>
+                        <p>An app where multiple people can Join / Create room to chat with each other or in groups.</p>
+                        <ul>
+                            <li>Uses Socket.io Library.</li>
+                            <li>Uses Express Library.</li>
+                            <li>Responsive design.</li>
+                            <li>Implmented Multi-room support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-Card" id="3" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Movie Guess Game</div>
+                        <div class="projectType">
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PUG</span>
+                        </div>
+                        <div class="expand">
+                            <span>Movie Guess Game</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="https://jai-movie-guess.herokuapp.com/" target="_blank">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/guessTheMovie" target="_blank">Github</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Movie Guess Game</h3>
+                        <p>A game where you have to guess movie's name one letter at a time, before you run out of lives!</p>
+                        <ul>
+                            <li>Responsive design.</li>
+                            <li>Incoming Json parsing and rendering.</li>
+                            <li>Internal and External API calls.</li>
+                            <li>Keyboard Event handling.</li>
+                            <li>Dynamic webpage using PUG.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-Card" id="4" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Decryptor Game</div>
+                        <div class="projectType">
+                            <span>Personal Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>C++</span>
+                            <span>Logic</span>
+                        </div>
+                        <div class="expand">
+                            <span>C++ Decryptor Game</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="https://www.onlinegdb.com/OOVoYwwQK" target="_blank">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/Decryptor" target="_blank">Github</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Decryptor Game</h3>
+                        <p>A game where you have to use number logic to guess which pseudo-random number computer has generated.</p>
+                        <ul>
+                            <li>Made with C++.</li>
+                            <li>Implemented Number Logic.</li>
+                            <li>Quirky Game.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-Card" id="5" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Old Photo Rectifier</div>
+                        <div class="projectType">
+                            <span>Makaut Internship Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>Python</span>
+                            <span>CNN</span>
+                            <span>Keras</span>
+                        </div>
+                        <div class="expand">
+                            <span>Brightness/Contrast Corrector</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="https://www.youtube.com/watch?v=Y3j0CrPLzxA" target="_blank">Case Study</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Brightness/Contrast Corrector using CNN</h3>
+                        <p>An CNN Machine-learning project, which corrects Brightness / Contrast of an old image.</p>
+                        <ul>
+                            <li>Used Tensorflow-Keras Library.</li>
+                            <li>Image pooling using Convulution Neural Network(CNN).</li>
+                            <li>Built on concepts of machine learning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-Card" id="6" onclick="rotate(this.id)">
+                <div class="innerCard">
+                    <div class="frontFace">
+                        <div class="projectName">Quick Accident Response</div>
+                        <div class="projectType">
+                            <span>Bengalathon Project</span>
+                        </div>
+                        <div class="labels">
+                            <span>IOT</span>
+                            <span>Aurdino</span>
+                        </div>
+                        <div class="expand">
+                            <span>IOT based Project</span>
+                            <span> <img src="./image/more.png" alt="" srcset=""> </span>
+                        </div>
+                        <div class="links">
+                            <span> <a href="https://souravjai.github.io/Resume/documents/qass.pptx" target="_blank">Detailed Presentation</a> </span>
+                        </div>
+                    </div>
+                    <div class="backFace">
+                        <h3>Quick Accident Response</h3>
+                        <p>Made a device that would inform the nearest PCR when an accident occured with its GPS location.</p>
+                        <ul>
+                            <li>Uses IOT Concepts.</li>
+                            <li>Used: GPS Module, GSM Module, Aurdino Module.</li>
+                            <li>Qualified in Top-25 All India Hackathon.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container hidden visuallyHidden" id="Social">
+        <div class="ProjectHeading">
+            <span class="bluebox"></span>
+            <span class="name">Coding Profiles</span>
+        </div>
+        <div class="coding-profiles">
+            <div class="coding-card">
+                <span class="codeProfile" id="github">
+                    <span class="code-icon"><a href="https://github.com/souravjai" target="_blank"><img src="./image/Github.png" alt="github" srcset=""></a></span>
+                <span> <a href="https://github.com/souravjai" target="_blank">Github</a> </span>
+                </span>
+                <span class="codeProfile" id="leetcode">
+                    <span class="code-icon"><a href="https://leetcode.com/souravjaiswal2000/" target="_blank"><img src="./image/leetcode.png" alt="leetcode" srcset=""></a></span>
+                <span> <a href="https://leetcode.com/souravjaiswal2000/" target="_blank">Leetcode</a> </span>
+                </span>
+                <span class="codeProfile" id="codechef">
+                    <span class="code-icon"><a href="https://www.codechef.com/users/sourav_jai" target="_blank"><img src="./image/codechef.jpg" alt="codechef" srcset=""></a></span>
+                <span> <a href="https://www.codechef.com/users/sourav_jai" target="_blank">CodeChef</a> </span>
+                </span>
+                <span class="codeProfile" id="codeforces">
+                    <span class="code-icon"><a href="https://codeforces.com/profile/Souravjaiswal2000" target="_blank"><img src="./image/codeforces.png" alt="codeforces" srcset=""></a></span>
+                <span> <a href="https://codeforces.com/profile/Souravjaiswal2000" target="_blank">Codeforces</a> </span>
+                </span>
+            </div>
+        </div>
+
+        <div class="ProjectHeading">
+            <span class="bluebox"></span>
+            <span class="name">Socials</span>
+        </div>
+        <div class="coding-profiles">
+            <div class="coding-card">
+
+
+                <span class="codeProfile" id="linkedin">
+                    <span class="code-icon"><a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank"><img src="./image/linkein.png" alt="linkedin" srcset=""></a></span>
+                <span> <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank">Linkedin</a> </span>
+                </span>
+
+
+                <span class="codeProfile" id="facebook">
+                    <span class="code-icon"><a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank"><img src="./image/facebook-c.png" alt="Facebook" srcset=""></a></span>
+                <span> <a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank">Facebook</a> </span>
+                </span>
+
+                <span class="codeProfile" id="Insta">
+                    <span class="code-icon"><a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank"><img src="./image/insta-color.png" alt="Instagram" srcset=""></a></span>
+                <span> <a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank">Instagram</a> </span>
+                </span>
+
+            </div>
+        </div>
+
+
+        <div class="ProjectHeading">
+            <span class="bluebox"></span>
+            <span class="name">Contact</span>
+        </div>
+        <div class="coding-profiles">
+            <div class="coding-card">
+
+
+                <span class="codeProfile" id="gmail">
+                    <span class="code-icon"><a href="mailto:souravjaiswal2000@gmail.com"><img src="./image/gmail C.png" alt="gmail" srcset=""></a></span>
+                <span> <a href="mailto:souravjaiswal2000@gmail.com">Gmail</a> </span>
+                </span>
+
+
+                <span class="codeProfile" id="whatsapp">
+                    <span class="code-icon"><a href="https://wa.me/+918017474045"><img src="./image/WhatsApp.svg.png" alt="whatsapp" srcset=""></a></span>
+                <span> <a href="https://wa.me/+918017474045">Whatsapp</a> </span>
+                </span>
+
+                <span class="codeProfile" id="call">
+                    <span class="code-icon"><a href="tel:+918017474045"><img src="./image/call.png" alt="call" srcset=""></a></span>
+                <span> <a href="tel:+918017474045">Call Me</a> </span>
+                </span>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footerLeft">
+            <div>
+                <div>Made by Sourav Jaiswal</div>
+                <div>Last updated on 11th-May</div>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="Rfooter">
+                <div>Call</div>
+                <div>
+                    <a href="tel:+918017474045">+91 80174 74045</a></div>
+            </div>
+            <div class="Rfooter">
+                <div>Write</div>
+                <div><a href="mailto:souravjaiswal2000@gmail.com">souravjaiswal@2000.com</a></div>
+            </div>
+            <div class="Rfooter">
+                <div>Social</div>
+                <div id="icons">
+                    <a href="https://www.facebook.com/profile.php?id=100004102851464"><img src="./image/facebook.png" alt="" srcset=""></a>
+                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/"><img src="./image/linkedin.png" alt="" srcset=""></a>
+                    <a href="https://www.instagram.com/jaiswal_sourav_/"><img src="./image/insta.png" alt="" srcset=""></a>
+                    <a href="https://wa.me/+918017474045"><img src="./image/whatsapp.png" alt="" srcset=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,267 @@
+#phone {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    width: 60px;
+    height: 36px;
+    /* background: red; */
+    flex-direction: column;
+    align-items: center;
+}
+
+#phone.active {
+    top: 33px
+}
+
+#phone>span {
+    height: 1px;
+    width: 50%;
+    background: var(--blue);
+    padding: 2px;
+    margin: 4px 2px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+#phone.active>span {
+    position: absolute;
+}
+
+#phone.active>span:nth-child(1) {
+    transform: rotate(40deg);
+}
+
+#phone.active>span:nth-child(2) {
+    scale: 0;
+}
+
+#phone.active>span:nth-child(3) {
+    transform: rotate(-40deg);
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header {
+    height: 95px;
+    transition: all 0.30s linear;
+    flex-direction: column;
+}
+
+.container {
+    padding-top: 95px;
+    padding-bottom: 25px;
+}
+
+aside.colorOverlay {
+    width: 100%;
+    height: 1200px;
+}
+
+header>.HeaderleftBar {
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    /* background-color: red; */
+}
+
+.HeaderleftBar>.name {
+    font-size: 25px;
+}
+
+.HeaderleftBar>.designation {
+    display: block;
+    font-size: 20px;
+}
+
+.divide {
+    display: none;
+}
+
+header>.HeaderNavbar {
+    display: none;
+}
+
+.card {
+    height: 1000px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    flex-direction: column;
+}
+
+.leftCard {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 50px;
+}
+
+.leftCard>.pic {
+    margin-top: 20px;
+    height: 120px;
+    width: 120px;
+    /* background: red; */
+}
+
+.rightpara {
+    /* display: none; */
+    width: 100%;
+    background: white;
+}
+
+.rightpara>h1 {
+    font-size: 45px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs>a {
+    margin-bottom: 5px;
+}
+
+.btn {
+    width: 240px;
+    padding: 15px;
+}
+
+.rightpara code {
+    letter-spacing: normal;
+    font-size: 20px;
+}
+
+footer {
+    flex-direction: column-reverse;
+    height: 170px;
+    align-items: flex-end;
+    margin-top: 11px;
+}
+
+.footerRight {
+    width: 100%;
+    flex-direction: column;
+}
+
+.Rfooter {
+    margin: 5px;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.Rfooter>div:nth-child(1) {
+    font-family: var(--content);
+    font-weight: 900;
+}
+
+#icons {
+    width: auto;
+}
+
+div#icons>a {
+    margin: 0px 10px;
+}
+
+header>.HeaderNavbar {
+    width: 100%;
+    justify-content: center;
+}
+
+.navList {
+    margin: 30px 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navItem {
+    margin: 5px;
+    padding: 5px;
+}
+
+.projectList {
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.innerCard {
+    width: 330px;
+    margin: 10px auto;
+}
+
+.projectName {
+    font-size: 29px;
+    padding-top: 11px;
+}
+
+.project-Card:nth-child(6) .projectName {
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+.backFace h3 {
+    font-size: 25px;
+}
+
+.backFace p {
+    font-size: 16px;
+}
+
+.backFace li {
+    font-size: 15px;
+}
+
+.codeProfile {
+    padding: 20px 0;
+}
+
+.coding-card {
+    width: 95%;
+}
+
+.scroll {
+    font-size: 13px;
+    margin: 2px 1px;
+}
+
+.scroll>span,
+.scroll>a {
+    margin: 10px 5px;
+}
+
+.background-details {
+    width: 95%;
+}
+
+ul.skill-list {
+    grid-template-columns: 1fr;
+}
+
+.work-header {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Resume-card {
+    width: 98%;
+    min-height: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+}
+
+.left-ResumeCard {
+    margin: 15px;
+    padding-left: 0;
+}
+
+.right-ResumeCard {
+    padding-left: 10px;
+}
+
+.right-ResumeCard>ul>li {
+    padding-right: 10px;
+}
