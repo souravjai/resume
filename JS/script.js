@@ -11,7 +11,7 @@ function rotate(id) {
     }
 }
 
-function disp(destination, index) {
+function disp(destination, index, exp = 0) {
 
     document.querySelectorAll(".navItem").forEach(item => { item.style.pointerEvents = "none" });
 
@@ -33,7 +33,7 @@ function disp(destination, index) {
     document.querySelector(".navItem>a.selected").classList.remove("selected");
     document.getElementsByClassName("navItem")[index - 1].querySelector("a").classList.add("selected");
 
-    if (document.getElementById("phone").clientHeight != 0)
+    if (exp == 0 && document.getElementById("phone").clientHeight != 0)
         expand();
 
     document.body.scrollTop = document.documentElement.scrollTop = 0;
