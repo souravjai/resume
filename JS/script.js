@@ -35,10 +35,17 @@ function disp(destination, index, exp = 0) {
 
     if (exp == 0 && document.getElementById("phone").clientHeight != 0)
         expand();
-
+    if (destination === 'Project')
+        projectCardFlip();
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
+function projectCardFlip() {
+    document.querySelectorAll(".innerCard").forEach(item => {
+        item.classList.remove("rotate");
+        item.removeAttribute("style");
+    });
+}
 
 function expand() {
     const header = document.querySelector("header");

@@ -187,6 +187,10 @@ header>.HeaderNavbar {
     padding: 5px;
 }
 
+.project-Card {
+    width: auto;
+}
+
 .projectList {
     width: 100%;
     grid-template-columns: 1fr;

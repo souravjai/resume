@@ -41,7 +41,7 @@ header {
     box-shadow: 0px 1px 20px 0px black;
     display: flex;
     flex-direction: row;
-    z-index: 2;
+    z-index: 3;
 }
 
 header>.HeaderleftBar {
@@ -140,6 +140,7 @@ aside.colorOverlay {
     justify-content: flex-start;
     align-items: center;
     box-shadow: -5px 2px 6px 0px rgba(128, 128, 128, 0.616);
+    z-index: 2;
 }
 
 .leftCard>.pic {
@@ -240,6 +241,14 @@ aside.colorOverlay {
     padding: 5px;
 }
 
+.tabs {
+    display: flex;
+}
+
+.tabs>a {
+    margin: 2px;
+}
+
 .btn {
     width: 140px;
     background-color: transparent;
@@ -263,7 +272,7 @@ aside.colorOverlay {
 }
 
 .selected_button:hover {
-    background-color: white;
+    background-color: transparent;
     color: var(--blue);
 }
 
@@ -591,17 +600,15 @@ ul.skill-list>li:before {
 
 .project-Card {
     perspective: 1000px;
+    width: 100%;
 }
 
 .innerCard {
     position: relative;
-    width: 100%;
-    height: 100%;
-    /* transition: transform 0.6s; */
+    width: 95%;
     transform-style: preserve-3d;
     display: inline-block;
     height: 300px;
-    width: 400px;
     background-color: white;
     margin: 20px;
     box-shadow: -4px 3px 20px 3px #b7b3b3;
