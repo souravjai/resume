@@ -1,0 +1,61 @@
+ header>.HeaderleftBar{
+     padding-left: 2px;
+     /* background-color: red; */
+     width: 60%;
+ }
+
+ header>.HeaderNavbar{
+     width: auto;
+ }
+ .navList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 2px;
+ }
+
+ .card{
+     width: 90%;
+     left: 5%;
+ }
+.leftCard>.pic{
+    height: 150px;
+    width: 150px;
+}
+
+.background-details{
+    width:75%;
+}
+
+.projectList{
+    grid-template-columns: 1fr 1fr;
+}
+.project-Card{
+    max-width: 400px;
+}
+
+.backFace h3{
+    margin: 13px 0px;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+.projectName{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.project-Card:nth-child(6) .projectName{
+    font-size: 25px;
+}
+
+.coding-card{
+    width: 75%;
+}
+footer{
+    justify-content: space-around;
+}
+.footerLeft{
+    width: 40%;
+}
+.footerRight{
+    width: auto;
+    gap: 10px;
+}

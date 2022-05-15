@@ -232,6 +232,8 @@ aside.colorOverlay {
 .rightpara code {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 300;
+    font-style: italic;
     font-size: 25px;
     letter-spacing: 2px;
 }
@@ -522,7 +524,9 @@ ul.skill-list>li:before {
     margin: 10px;
     padding: 5px;
     font-size: 19px;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 300;
+    font-style: italic;
 }
 
 .labels {
@@ -622,10 +626,11 @@ ul.skill-list>li:before {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    transform: rotateX(0deg);
 }
 
 .backFace {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .rotate {
@@ -646,6 +651,7 @@ ul.skill-list>li:before {
     padding: 0 13px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
+    font-style: italic;
     line-height: 1.5;
     color: #039be5;
 }
@@ -657,7 +663,8 @@ ul.skill-list>li:before {
 }
 
 .project-Card:nth-child(6) .projectName {
-    font-size: 30px;
+    font-size: 28px;
+    padding-top: 10px;
 }
 
 .coding-card {
