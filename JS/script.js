@@ -1,6 +1,6 @@
 function rotate(id) {
 
-    innerCard = document.querySelectorAll(".innerCard")[id - 1];
+    innerCard = document.querySelectorAll(".innerCard")[id];
 
     if (innerCard.classList.contains("rotate")) {
         innerCard.classList.remove("rotate");

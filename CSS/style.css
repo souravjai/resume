@@ -426,6 +426,7 @@ footer {
     margin-left: 20px;
     font-family: var(--heading);
     font-size: 15px;
+    margin-right: 10px;
 }
 
 .right-ResumeCard>ul>li {
@@ -538,7 +539,7 @@ ul.skill-list>li:before {
 .labels>span {
     display: inline-block;
     padding: 10px 6px;
-    width: 80px;
+    width: 90px;
     height: 35px;
     /* margin: 0px 5px; */
     /* display: flex; */
