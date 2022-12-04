@@ -11,7 +11,9 @@
     <link rel="stylesheet" media="(min-width:601px) and (max-width:1200px)" href="./CSS/tab_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Raleway:wght@300;400&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./image/favicon.png">
 </head>
 
@@ -50,11 +52,16 @@
                 <div class="blueLine"></div>
                 <div class="designation">SOFTWARE DEVELOPER</div>
                 <div class="followFooter">
-                    <a href="https://github.com/souravjai" target="_blank"><img src="./image/Github.png" alt="github" srcset=""></a>
-                    <a href="mailto:souravjaiswal2000@gmail.com" target="_blank"><img src="./image/gmail.png" alt="gmail" srcset=""></a>
-                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank"><img src="./image/linkedin.png" alt="linkedin" srcset=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank"><img src="./image/facebook.png" alt="facebook" srcset=""></a>
-                    <a href="https://wa.me/+918017474045" target="_blank"><img src="./image/whatsapp.png" alt="whatsapp" srcset=""></a>
+                    <a href="https://github.com/souravjai" target="_blank"><img src="./image/Github.png" alt="github"
+                            srcset=""></a>
+                    <a href="mailto:souravjaiswal2000@gmail.com" target="_blank"><img src="./image/gmail.png"
+                            alt="gmail" srcset=""></a>
+                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank"><img
+                            src="./image/linkedin.png" alt="linkedin" srcset=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank"><img
+                            src="./image/facebook.png" alt="facebook" srcset=""></a>
+                    <a href="https://wa.me/+918017474045" target="_blank"><img src="./image/whatsapp.png" alt="whatsapp"
+                            srcset=""></a>
                 </div>
             </div>
             <div class="rightpara">
@@ -63,10 +70,13 @@
                 <div class="tabs">
                     <a onclick="disp('Resume',2,1)"><button class="btn">Resume</button></a>
                     <a onclick="disp('Project',3,1)"><button class="btn">Projects</button></a>
-                    <a href="https://drive.google.com/file/d/1twaCt0AGKHC_5QadI5W52usSbEEtAdsC/view?usp=sharing"><button class="btn selected_button">Download CV</button></a>
+                    <a href="https://drive.google.com/file/d/1twaCt0AGKHC_5QadI5W52usSbEEtAdsC/view?usp=sharing"><button
+                            class="btn selected_button">Download CV</button></a>
                 </div>
                 <p>I am a Software Developer who loves to play around with code and develop new stuff.
-                    <br><br> Sound knowledge in Data-Structure & Algorithm, Core-Java, Fullstack-Development, Object-Oriented Programming concepts and lot more!.</p>
+                    <br><br> Sound knowledge in Data-Structure & Algorithm, Core-Java, Fullstack-Development,
+                    Object-Oriented Programming concepts and lot more!.
+                </p>
                 <code>while( !(succeed = tryAgain() ));</code>
             </div>
         </div>
@@ -93,7 +103,14 @@
 
             <div class="Resume-card skills" id="skillset">
                 <ul class="skill-list">
-                    <li>Fullstack Development: HTML+CSS, Javascript, NodeJS, ReactJS</li>
+                    <li>Fullstack Development:
+                        <ul class="nestedList">
+                            <li>HTML+CSS</li>
+                            <li>Javascript</li>
+                            <li>NodeJS</li>
+                            <li>ReactJS</li>
+                        </ul>
+                    </li>
                     <li>Object Oriented Programming knowledge: Java , C++</li>
                     <li>Data Structures & Algorithm</li>
                     <li>Database: SQL, PLSQL</li>
@@ -104,28 +121,45 @@
             </div>
             <div class="work-header" id="Experience">
                 <span class="name">Experience</span>
-                <a href="https://drive.google.com/file/d/1twaCt0AGKHC_5QadI5W52usSbEEtAdsC/view?usp=sharing"><button class="btn selected_button">Download CV</button></a>
+                <a href="https://drive.google.com/file/d/1twaCt0AGKHC_5QadI5W52usSbEEtAdsC/view?usp=sharing"><button
+                        class="btn selected_button">Download CV</button></a>
             </div>
             <div class="Resume-card">
                 <div class="left-ResumeCard">
                     <div class="duration">2021-Present</div>
-                    <h3>Digital Cadre</h3>
-                    <h4>Tata Consultancy Services</h4>
+                    <h3>Tata Consultancy Services</h3>
+                    <h4>System Engineer </h4>
+                    <h4>Digital Cadre</h4>
                     <h4>Kolkata</h4>
                 </div>
                 <div class="right-ResumeCard">
-                    <h3>
-                        System Engineer
-                    </h3>
-                    <ul>
-                        <li>Developed framework to automate testing of web apps. </li>
-                        <li>Automation using Selenium Web driver,Junit, TestNG frameworks.</li>
-                        <li>Worked in agile model. Proficient in SDLC, STLC and waterfall model.</li>
-                        <li>API Testing with Postman. Manual Testing of native iOS applications</li>
-                        <li>Implemented process improvement plans which reduced manual efforts by 65%.</li>
-                        <li>Worked on three different projects simultaneously.</li>
-                    </ul>
-
+                    <div class="workExp">
+                        <div style="width: 110%;">
+                            <h3>
+                                TCS Innovation Project
+                                <span>React Developer</span>
+                            </h3>
+                            <ul>
+                                <li>Bootstrapped Single Page React Application project from scratch.</li>
+                                <li>Complete Frontend Development Responbility.</li>
+                                <li>Implemented Dynamic coding concepts to cater changing needs.</li>
+                                <li>Powered by Material UI providing industry level UX</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>
+                                Pearson Q-interactive
+                                <span>Selenium Automation Engineer</span>
+                            </h3>
+                            <ul>
+                                <li>Developed framework to automate testing of web apps.</li>
+                                <li>Automation using Selenium Web driver,Junit, TestNG frameworks.</li>
+                                <li>Implemented process improvement plans which reduced manual efforts by 65% and
+                                    improved velocity significantly</li>
+                                <li>Complete Jenkins integration for continous testing.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -140,6 +174,7 @@
                     <h4>Kolkata</h4>
                 </div>
                 <div class="right-ResumeCard">
+                    <h3>Key Overviews:</h3>
                     <ul>
                         <li>DGPA: 9.17</li>
                         <li>Member of coding club.</li>
@@ -157,6 +192,7 @@
                     <h4>Kolkata</h4>
                 </div>
                 <div class="right-ResumeCard">
+                    <h3>Key Overviews:</h3>
                     <ul>
                         <li>Percentage Scored: 93%</li>
                         <li>Scored 98 in Computer Science.</li>
@@ -173,6 +209,7 @@
                     <h4>Kolkata</h4>
                 </div>
                 <div class="right-ResumeCard">
+                    <h3>Key Overviews:</h3>
                     <ul>
                         <li>Percentage Scored: 82.4%</li>
                         <li>Scored 100 in Computer Science.</li>
@@ -189,7 +226,7 @@
             <span class="name">Projects</span>
         </div>
         <div class="projectList">
-            
+
             <div class="project-Card" id="0" onclick="rotate(this.id)">
                 <div class="innerCard">
                     <div class="frontFace">
@@ -206,8 +243,10 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://react-todo-jai.netlify.app/" target="_blank" onclick="rotate(0)">Website</a> </span>
-                            <span> <a href="https://github.com/souravjai/react-todo" target="_blank" onclick="rotate(0)">Github</a> </span>
+                            <span> <a href="https://react-todo-jai.netlify.app/" target="_blank"
+                                    onclick="rotate(0)">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/react-todo" target="_blank"
+                                    onclick="rotate(0)">Github</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
@@ -225,7 +264,7 @@
                 </div>
             </div>
 
-            
+
             <div class="project-Card" id="1" onclick="rotate(this.id)">
                 <div class="innerCard">
                     <div class="frontFace">
@@ -243,8 +282,10 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="http://jai-bingo.herokuapp.com/" target="_blank" onclick="rotate(1)">Website</a> </span>
-                            <span> <a href="https://github.com/souravjai/bingo" target="_blank" onclick="rotate(1)">Github</a> </span>
+                            <span> <a href="http://jai-bingo.herokuapp.com/" target="_blank"
+                                    onclick="rotate(1)">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/bingo" target="_blank"
+                                    onclick="rotate(1)">Github</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
@@ -278,8 +319,10 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://sourav-chat.herokuapp.com/" target="_blank" onclick="rotate(2)">Website</a> </span>
-                            <span> <a href="https://github.com/souravjai/realtimeChatApp" target="_blank" onclick="rotate(2)">Github</a> </span>
+                            <span> <a href="https://sourav-chat.herokuapp.com/" target="_blank"
+                                    onclick="rotate(2)">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/realtimeChatApp" target="_blank"
+                                    onclick="rotate(2)">Github</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
@@ -312,13 +355,16 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://jai-movie-guess.herokuapp.com/" target="_blank" onclick="rotate(3)">Website</a> </span>
-                            <span> <a href="https://github.com/souravjai/guessTheMovie" target="_blank" onclick="rotate(3)">Github</a> </span>
+                            <span> <a href="https://jai-movie-guess.herokuapp.com/" target="_blank"
+                                    onclick="rotate(3)">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/guessTheMovie" target="_blank"
+                                    onclick="rotate(3)">Github</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
                         <h3>Movie Guess Game</h3>
-                        <p>A game where you have to guess movie's name one letter at a time, before you run out of lives!</p>
+                        <p>A game where you have to guess movie's name one letter at a time, before you run out of
+                            lives!</p>
                         <ul>
                             <li>Responsive design.</li>
                             <li>Incoming Json parsing and rendering.</li>
@@ -346,13 +392,16 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://www.onlinegdb.com/OOVoYwwQK" target="_blank" onclick="rotate(4)">Website</a> </span>
-                            <span> <a href="https://github.com/souravjai/Decryptor" target="_blank" onclick="rotate(4)">Github</a> </span>
+                            <span> <a href="https://www.onlinegdb.com/OOVoYwwQK" target="_blank"
+                                    onclick="rotate(4)">Website</a> </span>
+                            <span> <a href="https://github.com/souravjai/Decryptor" target="_blank"
+                                    onclick="rotate(4)">Github</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
                         <h3>Decryptor Game</h3>
-                        <p>A game where you have to use number logic to guess which pseudo-random number computer has generated.</p>
+                        <p>A game where you have to use number logic to guess which pseudo-random number computer has
+                            generated.</p>
                         <ul>
                             <li>Made with C++.</li>
                             <li>Implemented Number Logic.</li>
@@ -379,7 +428,8 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://www.youtube.com/watch?v=Y3j0CrPLzxA" target="_blank" onclick="rotate(5)">Case Study</a> </span>
+                            <span> <a href="https://www.youtube.com/watch?v=Y3j0CrPLzxA" target="_blank"
+                                    onclick="rotate(5)">Case Study</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
@@ -410,12 +460,14 @@
                             <span> <img src="./image/more.png" alt="" srcset=""> </span>
                         </div>
                         <div class="links">
-                            <span> <a href="https://souravjai.github.io/Resume/documents/qass.pptx" target="_blank" onclick="rotate(6)">Detailed Presentation</a> </span>
+                            <span> <a href="https://souravjai.github.io/Resume/documents/qass.pptx" target="_blank"
+                                    onclick="rotate(6)">Detailed Presentation</a> </span>
                         </div>
                     </div>
                     <div class="backFace">
                         <h3>Quick Accident Response</h3>
-                        <p>Made a device that would inform the nearest PCR when an accident occured with its GPS location.</p>
+                        <p>Made a device that would inform the nearest PCR when an accident occured with its GPS
+                            location.</p>
                         <ul>
                             <li>Uses IOT Concepts.</li>
                             <li>Used: GPS Module, GSM Module, Aurdino Module.</li>
@@ -436,20 +488,25 @@
         <div class="coding-profiles">
             <div class="coding-card">
                 <span class="codeProfile" id="github">
-                    <span class="code-icon"><a href="https://github.com/souravjai" target="_blank"><img src="./image/Github.png" alt="github" srcset=""></a></span>
-                <span> <a href="https://github.com/souravjai" target="_blank">Github</a> </span>
+                    <span class="code-icon"><a href="https://github.com/souravjai" target="_blank"><img
+                                src="./image/Github.png" alt="github" srcset=""></a></span>
+                    <span> <a href="https://github.com/souravjai" target="_blank">Github</a> </span>
                 </span>
                 <span class="codeProfile" id="leetcode">
-                    <span class="code-icon"><a href="https://leetcode.com/souravjaiswal2000/" target="_blank"><img src="./image/leetcode.png" alt="leetcode" srcset=""></a></span>
-                <span> <a href="https://leetcode.com/souravjaiswal2000/" target="_blank">Leetcode</a> </span>
+                    <span class="code-icon"><a href="https://leetcode.com/souravjaiswal2000/" target="_blank"><img
+                                src="./image/leetcode.png" alt="leetcode" srcset=""></a></span>
+                    <span> <a href="https://leetcode.com/souravjaiswal2000/" target="_blank">Leetcode</a> </span>
                 </span>
                 <span class="codeProfile" id="codechef">
-                    <span class="code-icon"><a href="https://www.codechef.com/users/sourav_jai" target="_blank"><img src="./image/codechef.jpg" alt="codechef" srcset=""></a></span>
-                <span> <a href="https://www.codechef.com/users/sourav_jai" target="_blank">CodeChef</a> </span>
+                    <span class="code-icon"><a href="https://www.codechef.com/users/sourav_jai" target="_blank"><img
+                                src="./image/codechef.jpg" alt="codechef" srcset=""></a></span>
+                    <span> <a href="https://www.codechef.com/users/sourav_jai" target="_blank">CodeChef</a> </span>
                 </span>
                 <span class="codeProfile" id="codeforces">
-                    <span class="code-icon"><a href="https://codeforces.com/profile/Souravjaiswal2000" target="_blank"><img src="./image/codeforces.png" alt="codeforces" srcset=""></a></span>
-                <span> <a href="https://codeforces.com/profile/Souravjaiswal2000" target="_blank">Codeforces</a> </span>
+                    <span class="code-icon"><a href="https://codeforces.com/profile/Souravjaiswal2000"
+                            target="_blank"><img src="./image/codeforces.png" alt="codeforces" srcset=""></a></span>
+                    <span> <a href="https://codeforces.com/profile/Souravjaiswal2000" target="_blank">Codeforces</a>
+                    </span>
                 </span>
             </div>
         </div>
@@ -463,19 +520,24 @@
 
 
                 <span class="codeProfile" id="linkedin">
-                    <span class="code-icon"><a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank"><img src="./image/linkein.png" alt="linkedin" srcset=""></a></span>
-                <span> <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank">Linkedin</a> </span>
+                    <span class="code-icon"><a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/"
+                            target="_blank"><img src="./image/linkein.png" alt="linkedin" srcset=""></a></span>
+                    <span> <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/" target="_blank">Linkedin</a>
+                    </span>
                 </span>
 
 
                 <span class="codeProfile" id="facebook">
-                    <span class="code-icon"><a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank"><img src="./image/facebook-c.png" alt="Facebook" srcset=""></a></span>
-                <span> <a href="https://www.facebook.com/profile.php?id=100004102851464" target="_blank">Facebook</a> </span>
+                    <span class="code-icon"><a href="https://www.facebook.com/profile.php?id=100004102851464"
+                            target="_blank"><img src="./image/facebook-c.png" alt="Facebook" srcset=""></a></span>
+                    <span> <a href="https://www.facebook.com/profile.php?id=100004102851464"
+                            target="_blank">Facebook</a> </span>
                 </span>
 
                 <span class="codeProfile" id="Insta">
-                    <span class="code-icon"><a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank"><img src="./image/insta-color.png" alt="Instagram" srcset=""></a></span>
-                <span> <a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank">Instagram</a> </span>
+                    <span class="code-icon"><a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank"><img
+                                src="./image/insta-color.png" alt="Instagram" srcset=""></a></span>
+                    <span> <a href="https://www.instagram.com/jaiswal_sourav_/" target="_blank">Instagram</a> </span>
                 </span>
 
             </div>
@@ -491,19 +553,22 @@
 
 
                 <span class="codeProfile" id="gmail">
-                    <span class="code-icon"><a href="mailto:souravjaiswal2000@gmail.com"><img src="./image/gmail C.png" alt="gmail" srcset=""></a></span>
-                <span> <a href="mailto:souravjaiswal2000@gmail.com">Gmail</a> </span>
+                    <span class="code-icon"><a href="mailto:souravjaiswal2000@gmail.com"><img src="./image/gmail C.png"
+                                alt="gmail" srcset=""></a></span>
+                    <span> <a href="mailto:souravjaiswal2000@gmail.com">Gmail</a> </span>
                 </span>
 
 
                 <span class="codeProfile" id="whatsapp">
-                    <span class="code-icon"><a href="https://wa.me/+918017474045"><img src="./image/WhatsApp.svg.png" alt="whatsapp" srcset=""></a></span>
-                <span> <a href="https://wa.me/+918017474045">Whatsapp</a> </span>
+                    <span class="code-icon"><a href="https://wa.me/+918017474045"><img src="./image/WhatsApp.svg.png"
+                                alt="whatsapp" srcset=""></a></span>
+                    <span> <a href="https://wa.me/+918017474045">Whatsapp</a> </span>
                 </span>
 
                 <span class="codeProfile" id="call">
-                    <span class="code-icon"><a href="tel:+918017474045"><img src="./image/call.png" alt="call" srcset=""></a></span>
-                <span> <a href="tel:+918017474045">Call Me</a> </span>
+                    <span class="code-icon"><a href="tel:+918017474045"><img src="./image/call.png" alt="call"
+                                srcset=""></a></span>
+                    <span> <a href="tel:+918017474045">Call Me</a> </span>
                 </span>
 
             </div>
@@ -523,7 +588,8 @@
             <div class="Rfooter">
                 <div>Call</div>
                 <div>
-                    <a href="tel:+918017474045">+91 80174 74045</a></div>
+                    <a href="tel:+918017474045">+91 80174 74045</a>
+                </div>
             </div>
             <div class="Rfooter">
                 <div>Write</div>
@@ -532,9 +598,12 @@
             <div class="Rfooter">
                 <div>Social</div>
                 <div id="icons">
-                    <a href="https://www.facebook.com/profile.php?id=100004102851464"><img src="./image/facebook.png" alt="" srcset=""></a>
-                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/"><img src="./image/linkedin.png" alt="" srcset=""></a>
-                    <a href="https://www.instagram.com/jaiswal_sourav_/"><img src="./image/insta.png" alt="" srcset=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004102851464"><img src="./image/facebook.png"
+                            alt="" srcset=""></a>
+                    <a href="https://www.linkedin.com/in/sourav-jaiswal-aa7570194/"><img src="./image/linkedin.png"
+                            alt="" srcset=""></a>
+                    <a href="https://www.instagram.com/jaiswal_sourav_/"><img src="./image/insta.png" alt=""
+                            srcset=""></a>
                     <a href="https://wa.me/+918017474045"><img src="./image/whatsapp.png" alt="" srcset=""></a>
                 </div>
             </div>
